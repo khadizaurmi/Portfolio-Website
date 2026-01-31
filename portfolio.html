@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-light" href="home.html"><img src="image/logo 1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html"> Protfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-light ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Page Title -->
+    <section class="portfolio-title text-center">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>Personal & Professional Details</p>
+        </div>
+    </section>
+
+    <!-- Personal Information -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-heading">Personal Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-card">
+                        <p><strong>Name:</strong> Nasim Uddin</p>
+                        <p><strong>Date of Birth:</strong> 01 Jan 2000</p>
+                        <p><strong>Email:</strong> nasimforofficial@gmail.com</p>
+                        <p><strong>Phone:</strong> +880-1818407984</p>
+                        <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="portfolio-section portfolio-bg">
+        <div class="container">
+            <h2 class="portfolio-heading">Education</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-card">
+                        <h5>BSc in CSE</h5>
+                        <p>OXFORD University</p>
+                        <span>2020 – 2024</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portfolio-card">
+                        <h5>HSC (Science)</h5>
+                        <p>Noter Dam College</p>
+                        <span>2018 – 2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Skills -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-heading">Special Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-card text-center">HTML & CSS</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-card text-center">Bootstrap</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-card text-center">JavaScript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training -->
+    <section class="portfolio-section portfolio-bg">
+        <div class="container">
+            <h2 class="portfolio-heading">Training</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-card">
+                        <h5>Web Development</h5>
+                        <p>Creative IT Institute</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Experience -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-heading">Working Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-card">
+                        <h5>Junior Web Developer</h5>
+                        <p>European IT Institute</p>
+                        <span>2024 – Present</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+
+    <!-- FOOTER -->
+
+        <section class="footer bg-dark">
+    <div class="container">
+
+        <hr class="bg-light">
+
+        <div class="text-center">
+            <p class="mb-0 text-light pb-3">@Copyright 2026.All rights reserved Khadiza.</p>
+            <!-- এখানে date & time দেখাব -->
+            <p id="current-datetime" class="text-light pb-3"></p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString(); // স্থানীয় ফরম্যাটে date & time
+    document.getElementById("current-datetime").innerText = dateTimeString;
+}
+
+// প্রথমবার কল এবং প্রতি 1 সেকেন্ডে আপডেট
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
